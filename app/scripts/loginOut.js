@@ -1,7 +1,8 @@
 (function() {
   'use strict';
   // 사용할 앱의 JavaScript 키를 설정해 주세요.
-  Kakao.init('appKey');
+  // Kakao.init(process.env.KAKAO_JAVASCRIPT_KEY);
+    Kakao.init('f1643921732f418af4cbdf08e8f6fde4');
 
   Kakao.Auth.getStatus(function(statusObj) {
     if(statusObj.status === 'not_connected') {
